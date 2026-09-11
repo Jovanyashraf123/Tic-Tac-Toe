@@ -26,7 +26,7 @@ function handleClick(e){
 
         if(checkforwinner()){
 
-            message.innerHTML=currentplayer + "" +"WON"
+            message.innerHTML=currentplayer + " " +"WON"
             overlay.style.visibility = "visible"
 
         }else if(checkforTIE()){
@@ -100,3 +100,23 @@ for(let square of squares){
     square.addEventListener("click", handleClick);
 }
 reset.addEventListener("click", resetGame);
+
+// ===========================================//
+
+let icon = document.querySelector(".a7a");
+let nav = document.querySelector("nav");
+let btn2 = document.querySelector(".close")
+
+console.log(close)
+
+icon.onclick = function(){
+    nav.classList.add("open")
+}
+btn2.onclick = function(){
+    this.parentElement.classList.remove("open")
+}
+document.onkeyup = function(e){
+    if(e.key ==="Escape" ){
+        nav.classList.remove("open")
+    }
+}
