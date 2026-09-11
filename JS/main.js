@@ -30,7 +30,7 @@ function handleClick(e){
             overlay.style.visibility = "visible"
 
         }else if(checkforTIE()){
-            message.innerHTML = "TIE"
+            message.innerHTML = "DRAW"
             overlay.style.visibility = "visible"
 
         }else{
