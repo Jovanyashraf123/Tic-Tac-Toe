@@ -125,6 +125,17 @@ nav {
   z-index: 99999;
   transform: translatey(-500px);
   transition: 0.5s;
+  top: 83px;
+  left: 24px;
+}
+nav::after {
+  content: "";
+  position: absolute;
+  border-width: 18px;
+  border-style: solid;
+  border-color: transparent transparent #161616 transparent;
+  top: -32px;
+  left: 6px;
 }
 nav .close {
   position: absolute;
@@ -144,11 +155,12 @@ nav .close:hover {
   border: 1px solid #ff0040;
 }
 nav a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 25px;
-  margin: 30px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 30px 21px;
+    padding: 28px 0;
 }
 nav a span.x {
   background-color: transparent;
